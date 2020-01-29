@@ -1,0 +1,69 @@
+<ion-header>
+  <!--<ion-toolbar>
+    <ion-title>Admin Login Page</ion-title>
+  </ion-toolbar>-->
+</ion-header>
+  
+<ion-content class="animated fadeIn login auth-page ion-padding">
+  <!--Added Section - Start-->
+  <div class="theme-bg"></div>
+  <div class="auth-content">
+    <div class="animated fadeInDown ion-padding-horizontal ion-text-center">
+      <div class="logo"></div>
+      <h4 class="ion-no-margin">
+        <ion-text color="light" class="fw700">
+          Tela de Login
+        </ion-text>
+      </h4>
+    </div>
+    <form class="list-form">      
+      <ion-row class="ion-justify-content-center">
+        <div class="text-white" ></div>
+      </ion-row>
+      <ion-grid>
+        <ion-row color="primary" class="ion-justify-content-center">
+          <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+            <div class="ion-padding">
+              <ion-item class="ion-no-padding animated fadeInUp">
+                <ion-label position="floating">
+                  <ion-icon name="mail" item-start></ion-icon>
+                  Email
+                </ion-label>
+                <ion-input color="secondary" type="email"></ion-input>
+              </ion-item>
+              <p ion-text class="text08" >
+                <ion-text color="warning">
+                  Campo Requerido
+                </ion-text>
+              </p>
+              <ion-item class="ion-no-padding animated fadeInUp">
+                <ion-label position="floating">
+                  <ion-icon name="lock" item-start></ion-icon>
+                  Senha
+                </ion-label>
+                <ion-input color="secondary" type="password" ></ion-input>
+              </ion-item>
+              <p ion-text color="warning" class="text08" >
+                <ion-text color="warning">
+                  Campo Requerido
+                </ion-text>
+              </p>
+            </div>
+            <ion-button icon-left size="medium" expand="full" shape="round" color="dark" (click)="goMenu()">
+              <ion-icon name="log-in"></ion-icon>
+              Entrar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+    <div class="ion-margin-top ion-text-center">
+      <span (click)="goHome()" class="paz" tappable>
+        <ion-text color="light">
+          Novo aqui? <strong>Cadastrar</strong>
+        </ion-text>
+      </span>
+    </div>
+  </div>
+  <!--Added Section - End-->
+</ion-content>
