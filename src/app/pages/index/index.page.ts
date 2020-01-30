@@ -2,23 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  selector: 'app-index',
+  templateUrl: './index.page.html',
+  styleUrls: ['./index.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class IndexPage implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  goHome() {
+  logout() {
     this.router.navigate(['/home']);
   }
 
-  goMenu() {
-    this.router.navigate(['/index']);
+  produtos() {
+    this.router.navigate(['/produtos']);
   }
 
 }

@@ -29,7 +29,7 @@
                   <ion-icon name="mail" item-start></ion-icon>
                   Email
                 </ion-label>
-                <ion-input color="secondary" type="email"></ion-input>
+                <ion-input color="secondary" [(ngModel)]="creds.email" name="email" type="email"></ion-input>
               </ion-item>
               <p ion-text class="text08" >
                 <ion-text color="warning">
@@ -41,7 +41,7 @@
                   <ion-icon name="lock" item-start></ion-icon>
                   Senha
                 </ion-label>
-                <ion-input color="secondary" type="password" ></ion-input>
+                <ion-input color="secondary" [(ngModel)]="creds.senha" name="senha" type="password"></ion-input>
               </ion-item>
               <p ion-text color="warning" class="text08" >
                 <ion-text color="warning">

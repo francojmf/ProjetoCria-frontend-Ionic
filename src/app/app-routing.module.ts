@@ -9,15 +9,20 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('../pages/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'index',
-    loadChildren: () => import('../pages/index/index.module').then( m => m.IndexPageModule)
+    loadChildren: () => import('./pages/index/index.module').then( m => m.IndexPageModule)
+  },
+
+  {
+    path: 'produtos',
+    loadChildren: () => import('./pages/produtos/produtos.module').then( m => m.ProdutosPageModule)
   },
 
 ];
